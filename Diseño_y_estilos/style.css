@@ -1,0 +1,173 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /*outline: 2px dashed rgb(0, 0, 0);*/ /* para test del outline */
+}
+
+body{
+    background-color: #f4f3ee;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200px;
+    height: auto;
+    width: auto;
+    position: fixed;
+    top: 0;
+}
+
+#storeIcon{
+    height: 30px;
+    size: 30px;
+}
+
+
+.row{
+    display: flex;
+}
+
+#searchBar{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+    background-color: #8a817c; /* Color de fondo opcional*/
+    width: auto; /*dejarlo auto para que se ajuste a cada pantalla*/
+    top: 0;
+    padding: 10px;
+    box-shadow: 0px 4px 2px -2px gray; /* Sombra */
+    z-index: 100; /* Asegura que el header esté sobre otros elementos */
+}
+
+
+/*DROPDOWN BUTTON MENU */ 
+
+.dropButton {
+background-color: #ff9f1c;
+color: white;
+padding: 14px;
+font-size: 14px;
+font-weight: 00;
+border: none;
+border: none; /* Elimina el borde */ 
+border-radius: 15px; /* Redondea las esquinas */
+}
+
+/* Div contenido */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links dentro del dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+
+/*Product image*/
+.productImage{
+    height: 100%;
+    width:100%;
+}
+
+.smallIcon img{
+    width: 30px; 
+    height: 30px; 
+}
+
+#header { 
+    display: flex; 
+    position: sticky;
+    justify-content: space-between; 
+    align-items: center; /* Para alinear verticalmente */ 
+    padding: 10px; 
+    background-color: #463f3a; 
+    width: auto; /*dejarlo auto para que se ajuste a cada pantalla*/
+    top: 0;
+    padding: 10px;
+    box-shadow: 0px 4px 2px -2px gray; /* Sombra */
+    z-index: 100; /* Asegura que el header esté sobre otros elementos */
+}
+
+#title{
+    font-family: "Satisfy", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f7f7f7;
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+.headerContent {
+    margin-top: 0px; /* Ajusta esto según la altura de tu header */
+    padding: 10px;
+}
+
+#centerProducts{
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.innerSpaceProducts{
+    padding: 10px;
+    margin: 10px;
+    background-color: #e0afa0;
+}
+
+.centerSocialMedia{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; /* Altura completa de la ventana */
+    padding: 10px;
+    align-items: center; 
+    background-color: #8a817c;
+    
+}
+
+.centerCopyright{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; /* Altura completa de la ventana */
+    padding: 10px;
+    align-items: center; 
+    background-color: #bcb8b1;
+}
+
+.productImageContainer{
+    height: 180px;
+    min-width: 250px;
+}
+
+.AddToTheCart{
+    background-color: #ff9f1c;
+    width: 100%;;
+    color: white;
+    padding: 14px;
+    font-size: 12px;
+    font-weight: 00;
+    border: none;
+    border: none; /* Elimina el borde */ 
+    border-radius: 15px;
+}
+
+.searchButton{
+    border: none; /* Elimina el borde */ 
+    border-radius: 15px; /* Redondea las esquinas */
+}
+

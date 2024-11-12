@@ -8,6 +8,7 @@
 
 <p> Esta semana desarrollé en base al diseño entregado una versión considerada por mi misma con cierta libertad, usando solamente HTML y CSS. 
 Todavía me falta mejorar el estilo que estoy buscando, pero me agrada que pude usar el flex, así como pude organizar lo más similar posible el espacio. 
+He puesto el efecto de hover con CSS3 en los botones y he hech un downdrop menu en la parte de las categorias. 
 
 Me gustaría encontrar una manera de establecer break points para volver el diseño más responsivo con respecto a pantallas
 más pequeñas, así como empezar a implementarle JS. 

@@ -24,7 +24,7 @@ body{
     display: flex;
 }
 
-#searchBar{
+#searchBarSpace{
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
@@ -75,6 +75,14 @@ text-decoration: none;
 display: block;
 }
 
+/* Cambia el color de la lista con el hover*/
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Muestra la lista cuando uno hace hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Cambia el color del boton*/
+.dropdown:hover .dropButton {background-color: #52c556;}
 
 /*Product image*/
 .productImage{
@@ -91,14 +99,14 @@ display: block;
     display: flex; 
     position: sticky;
     justify-content: space-between; 
-    align-items: center; /* Para alinear verticalmente */ 
+    align-items: center; 
     padding: 10px; 
     background-color: #463f3a; 
     width: auto; /*dejarlo auto para que se ajuste a cada pantalla*/
     top: 0;
     padding: 10px;
-    box-shadow: 0px 4px 2px -2px gray; /* Sombra */
-    z-index: 100; /* Asegura que el header esté sobre otros elementos */
+    box-shadow: 0px 4px 2px -2px gray; 
+    z-index: 100; /* Hace header esté sobre otros elementos */
 }
 
 #title{
@@ -168,6 +176,35 @@ display: block;
 
 .searchButton{
     border: none; /* Elimina el borde */ 
-    border-radius: 15px; /* Redondea las esquinas */
+    border-radius: 0px 15px 15px 0px; /* Redondea las esquinas */
+    height: 25px;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente */
 }
 
+.searchButton{
+    border: none; /* Elimina el borde */ 
+    border-radius: 0px 15px 15px 0px; /* Redondea las esquinas */
+    height: 25px;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente */
+    background-color: #ff9f1c;
+}
+
+.searchBar{
+    border: #8a817c;
+    border-radius: 15px 0px 0px 15px; /* Redondea las esquinas */
+        height: 25px;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente */
+    
+}
+
+/* Cambia el color del boton de Search*/
+.dropdown:hover .searchButton {background-color: #52c556;}

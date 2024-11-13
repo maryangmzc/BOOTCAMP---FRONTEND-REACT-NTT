@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    /* no dejemos código que no utilizamos */
     /*outline: 2px dashed rgb(0, 0, 0);*/ /* para test del outline */
 }
 
@@ -41,6 +42,7 @@ body{
 /*DROPDOWN BUTTON MENU */ 
 
 .dropButton {
+/* los colores, tamaños o valores fijos pueden estar declarados como varaibles en el root para poder reutilizarlos */
 background-color: #ff9f1c;
 color: white;
 padding: 14px;
@@ -113,6 +115,7 @@ display: block;
     font-family: "Satisfy", serif;
     font-weight: 400;
     font-style: normal;
+    /* los colores, tamaños o valores fijos pueden estar declarados como varaibles en el root para poder reutilizarlos */
     color: #f7f7f7;
     font-size: 20pt;
     font-weight: 600;

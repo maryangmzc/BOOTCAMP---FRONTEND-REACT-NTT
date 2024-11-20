@@ -1,6 +1,10 @@
-import {environments} from './environments.js';
+import { Category } from './entities/category.ts';
+import { environments } from './environments.ts';
 
-export const renderCategories = (container, categories) => {
+export const renderCategories = (
+  container: HTMLElement,
+  categories: Category[]
+) => {
   // EL CONTENEDOR ES EL SELECT
   for (let i = 0; categories.length > i; i++) {
     let opt = document.createElement('option'); // CREA NODO
@@ -11,11 +15,10 @@ export const renderCategories = (container, categories) => {
   }
 };
 
-export const getAllCategories = async (container) => {
+export const getAllCategories = async (container: HTMLElement) => {
   const response = await fetch(`${environments['api']}products/categories`);
 
   // products , solo existe dentro de getAllProducts
   const categories = await response.json();
-
   renderCategories(container, categories);
 };

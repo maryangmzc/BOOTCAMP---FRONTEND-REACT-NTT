@@ -1,63 +1,50 @@
 import './style.css';
-import javascriptLogo from './javascript.svg';
-import viteLogo from '/vite.svg';
-import { setupCounter } from './counter.js';
 
-const renderProduct = (productJson) => {
-  // PASO 5
-  const productArea = document.createElement('section');
-  productArea.className = 'product';
+import { getAllProducts, clearContainer, renderProducts } from './products.js';
+import { getAllCategories } from './categories.js';
 
-  const imageArea = document.createElement('div');
-  imageArea.className = 'image';
+window.productsGlobal = [];
 
-  const imgElement = document.createElement("img");
-  imgElement.src = productJson["thumbnail"];
+const applyFilter = (container, keyText) => {
+  clearContainer(container);
 
-  imageArea.appendChild(imgElement);
-
-  const titleArea = document.createElement('div');
-  titleArea.className = 'title';
-  titleArea.textContent = productJson["title"];
-
-  const descArea = document.createElement('div');
-  descArea.className = 'description';
-  descArea.textContent = productJson["description"];
-
-
-  productArea.appendChild(imageArea);
-  productArea.appendChild(titleArea);
-  productArea.appendChild(descArea);
-  return productArea;
-};
-
-const renderProducts = (container, products) => {
-  // PASO 4
-  for (let i = 0; products.length > i; i++) { // ITERA
-    let toRender = renderProduct(products[i]);
-    // PASO 6 FINAL
-    container.appendChild(toRender);
-  }
-};
-
-const getAllProducts = async (container) => {
-  // PASO 3
-  const response = await fetch('https://dummyjson.com/products');
-  const products = await response.json();
- 
-  renderProducts(container, products["products"]);
+  let result = productsGlobal.filter(
+    (producto) =>
+      producto.title.toLowerCase().includes(keyText.toLowerCase()) ||
+      producto.category === keyText
+  );
+  // result tiene productos filtrados
+  renderProducts(container, result);
 };
 
 // Capturo al contenedor de los productos
 // getElementsByClassName retorna un array [elemento]
 
 // PASO 1
-const products = document.getElementsByClassName('products');
+const productsContainer = document.getElementsByClassName('products');
+const filterInput = document.getElementById('filter');
+const categoriesSelect = document.getElementById('categories');
+window.cartCounter = document.getElementById('qty-update');
 
 // Valido que el contenedor exista
 // products existe?
 // la longitud de products es 1
-if (products && products.length === 1) {
+if (productsContainer && productsContainer.length === 1) {
   // PASO 2
-  getAllProducts(products[0]);
+  getAllProducts(productsContainer[0]);
 }
+
+getAllCategories(categoriesSelect);
+
+filterInput.addEventListener('keyup', function (event) {
+  // capturo valor
+  const text = event.target.value;
+
+  applyFilter(productsContainer[0], text);
+});
+
+categoriesSelect.addEventListener('change', function (event) {
+  const selected = event.target.value;
+  // selected es el valor seleccionado
+  applyFilter(productsContainer[0], selected);
+});

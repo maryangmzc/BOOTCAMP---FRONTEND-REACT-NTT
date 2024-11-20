@@ -1,186 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>  
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Minimarket</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
-        <script defer src="path/to/your/javascript/main.js"></script>
-    </head>
-
-    <!--Body orange rectangle-->
-    <body>
-
-        <!--Header blue rectangle-->
-        <header id="header" class="headerContent BackgroundDarkColor">
-
-            <!--Left green rectangle-->
-            <div class="rowContainer">
-                <a title="storeIcon" class="smallIcon" href=""><img src="./sources/store-icon.png" alt="Store icon" /></a>
-                <H2 id="title">MyMarket</H2>
-            </div>
-
-            <!--Right blue rectangle-->
-            <div>
-                <a title="shoppingCart" class="smallIcon" href=""><img src="./sources/shopping-cart.png" alt="Shopping cart"></a>
-            </div>
-
-        </header>
-
-
-        <!--Main middle red rectangle-->
-        <main>
-
-            <!--top purple rectangle-->
-            <div id="searchBarSpace" class="row BackgroundDarkColor">
-                <form class="rowContainer">
-                    <input class="searchBar" type="search" placeholder="Search...">
-                    <button class="searchButton buttonFont" type="submit">Search</button>
-                </form>
-
-                <div class="dropdown">
-                    <button class="dropButton buttonFont">Categorias</button>
-                    <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--botton purple rectangle-->
-            <div class="row productsDisplay in-flex centerProducts">
-
-                <div class="centerProducts products"></div>
-
-                
-                <!--left dark blue rectangle-->
-                <div class="innerSpaceProducts boxShadow boxOutline">
-
-                    <!--top green rectangle-->
-                    <div class="productImageContainer">
-                        <img class="productImage" src="./sources/eggs-in-a-carton.jpg" alt="eggs in a carton">
-                    </div>
-                    <!--middle green rectangle-->
-                    <div class="productsSection">
-                        <!--top orange rectangle-->
-                        <div>
-                        <h3 class="product"></h3>
-                        <p>Fresh eggs a versatile ingredient for baking, cooking or breakfast.</p>
-                        </div>
-                        <!--middle orange rectangle-->
-                        <div>
-                            <h4>Categorías</h4>
-                            <p> Diary <p>
-                        </div>
-                        <!--bottom orange rectangle-->
-                        <div>
-                            <h4>Price 2.99</h4>
-                        </div>
-                    </div>
-                    <!--bottom green rectangle-->
-                    <div>
-                        <button class="AddToTheCart buttonFont">Agregar al carrito</button>
-                    </div>
-                    
-                </div>
-
-                <!--middle dark blue rectangle-->
-                <div class="innerSpaceProducts boxShadow boxOutline">
-
-                    <!--top green rectangle-->
-                    <div class="productImageContainer">
-                        <img class="productImage" src="./sources/raw-fish-steak.jpg" alt="eggs in a carton">
-                    </div>
-                    <!--middle green rectangle-->
-                    <div>
-                        <!--top orange rectangle-->
-                        <div>
-                        <h3>Fish Steak</h3>
-                        <p>Quality fish steak, suitable for grilling, baking or pan-searing.</p>
-                        </div>
-                        <!--middle orange rectangle-->
-                        <div>
-                            <h4>Categorías</h4>
-                            <p> Seafood <p>
-                        </div>
-                        <!--bottom orange rectangle-->
-                        <div>
-                            <h4>Price 2.99</h4>
-                        </div>
-                    </div>
-                    <!--bottom green rectangle-->
-                    <div>
-                        <button class="AddToTheCart buttonFont">Agregar al carrito</button>
-                    </div>
-                    
-                </div>
-
-                <!--left dark blue rectangle-->
-
-                <div class="innerSpaceProducts boxShadow boxOutline">
-                    <!--top green rectangle-->
-                    <div class="productImageContainer">
-                        <img class="productImage" src="./sources/Green-bell-pepper.jpg" alt="eggs in a carton">
-                    </div>
-                    <!--middle green rectangle-->
-                    <div>
-                        <!--top orange rectangle-->
-                        <div>
-                        <h3>Green bell pepper</h3>
-                        <p>Fresh eggs a versatile ingredient for baking, cooking or breakfast.</p>
-                        </div>
-                        <!--middle orange rectangle-->
-                        <div>
-                            <h4>Categorías</h4>
-                            <p> Seafood <p>
-                        </div>
-                        <!--bottom orange rectangle-->
-                        <div>
-                            <h4>Price 2.99</h4>
-                        </div>
-                        <div>
-                            <button class="AddToTheCart buttonFont">Agregar al carrito</button>
-                        </div>
-                        
-                    </div>
-                </div>
-
-        </main>
-
-        <!--Footer yellow rectangle-->
-        <footer class="footer">
-            <!--top green rectangle-->
-            <div class="centerSocialMedia BackgroundDarkColor">
-                <!--top purple rectangle-->
-                <div>
-                <p>Síguenos en nuestras redes sociales</p>    
-                </div>
-                <!--bottom purple rectangle-->
-                <div class="row">
-                    <a title="Facebook" href="http://www.facebook.com"><img src="./sources/facebook-icon.png" alt="Facebook icon" /></a>
-                    <a title="Instagram" href="http://www.instagram.com"><img src="./sources/instagram-icon.png" alt="Instagram icon" /></a>
-                    <a title="Tik tok" href="http://www.tiktok.com"><img src="./sources/tiktok-icon.png" alt="Tik tok icon" /></a>
-                </div>
-                
-            </div>
-
-            <!--bottom green rectangle-->
-            <div class="centerCopyright">
-            <p>© 2024 My market. Todos los derechos reservados<br>
-            Politicas de privacidad | Terminos de uso | Contacto
-            </p>    
-            </div>
-            
-        </footer>
-
-    </body>
-
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Market</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cart-area">
+        <span id="qty-update" class="qty">0</span>
+        <svg
+          class="w-6 h-6 text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"
+          />
+        </svg>
+      </div>
+      <h1>Market</h1>
+      <main>
+        <form>
+          <select id="categories">
+            <option value="---">-- Categorias --</option>
+          </select>
+          <input id="filter" type="text" />
+        </form>
+        <section class="products"></section>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>

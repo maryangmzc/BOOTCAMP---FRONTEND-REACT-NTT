@@ -10,18 +10,18 @@
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
+        <script defer src="path/to/your/javascript/main.js"></script>
     </head>
 
     <!--Body orange rectangle-->
     <body>
 
         <!--Header blue rectangle-->
-        <!-- podemos seguir un estandar para la creación de clases como BEM u OSCSS -->
-        <header id="header" class="row headerContent">
+        <header id="header" class="headerContent BackgroundDarkColor">
 
             <!--Left green rectangle-->
-            <div class="row">
+            <div class="rowContainer">
                 <a title="storeIcon" class="smallIcon" href=""><img src="./sources/store-icon.png" alt="Store icon" /></a>
                 <H2 id="title">MyMarket</H2>
             </div>
@@ -38,14 +38,14 @@
         <main>
 
             <!--top purple rectangle-->
-            <div id="searchBar" class="row">
-                <form>
-                    <input type="search" placeholder="Search...">
-                    <button class="" type="submit">Search</button>
+            <div id="searchBarSpace" class="row BackgroundDarkColor">
+                <form class="rowContainer">
+                    <input class="searchBar" type="search" placeholder="Search...">
+                    <button class="searchButton buttonFont" type="submit">Search</button>
                 </form>
 
                 <div class="dropdown">
-                    <button class="dropButton">Categorias</button>
+                    <button class="dropButton buttonFont">Categorias</button>
                     <div class="dropdown-content">
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
@@ -55,9 +55,13 @@
             </div>
 
             <!--botton purple rectangle-->
-            <div id="centerProducts" class="row">
+            <div class="row productsDisplay in-flex centerProducts">
+
+                <div class="centerProducts products"></div>
+
+                
                 <!--left dark blue rectangle-->
-                <div class="innerSpaceProducts">
+                <div class="innerSpaceProducts boxShadow boxOutline">
 
                     <!--top green rectangle-->
                     <div class="productImageContainer">
@@ -67,7 +71,7 @@
                     <div class="productsSection">
                         <!--top orange rectangle-->
                         <div>
-                        <h3>Eggs</h3>
+                        <h3 class="product"></h3>
                         <p>Fresh eggs a versatile ingredient for baking, cooking or breakfast.</p>
                         </div>
                         <!--middle orange rectangle-->
@@ -82,13 +86,13 @@
                     </div>
                     <!--bottom green rectangle-->
                     <div>
-                        <button class="AddToTheCart">Agregar al carrito</button>
+                        <button class="AddToTheCart buttonFont">Agregar al carrito</button>
                     </div>
                     
                 </div>
 
                 <!--middle dark blue rectangle-->
-                <div class="innerSpaceProducts">
+                <div class="innerSpaceProducts boxShadow boxOutline">
 
                     <!--top green rectangle-->
                     <div class="productImageContainer">
@@ -113,14 +117,14 @@
                     </div>
                     <!--bottom green rectangle-->
                     <div>
-                        <button class="AddToTheCart">Agregar al carrito</button>
+                        <button class="AddToTheCart buttonFont">Agregar al carrito</button>
                     </div>
                     
                 </div>
 
                 <!--left dark blue rectangle-->
 
-                <div class="innerSpaceProducts">
+                <div class="innerSpaceProducts boxShadow boxOutline">
                     <!--top green rectangle-->
                     <div class="productImageContainer">
                         <img class="productImage" src="./sources/Green-bell-pepper.jpg" alt="eggs in a carton">
@@ -142,7 +146,7 @@
                             <h4>Price 2.99</h4>
                         </div>
                         <div>
-                            <button class="AddToTheCart">Agregar al carrito</button>
+                            <button class="AddToTheCart buttonFont">Agregar al carrito</button>
                         </div>
                         
                     </div>
@@ -151,9 +155,9 @@
         </main>
 
         <!--Footer yellow rectangle-->
-        <footer>
+        <footer class="footer">
             <!--top green rectangle-->
-            <div class="centerSocialMedia">
+            <div class="centerSocialMedia BackgroundDarkColor">
                 <!--top purple rectangle-->
                 <div>
                 <p>Síguenos en nuestras redes sociales</p>    

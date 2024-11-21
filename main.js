@@ -1,4 +1,6 @@
 import './style.css';
+// no dejar c'odigo comentado, tampoco dejar archivos que no se usan como el counter.js, javascript.svg, etc
+// la logica y el consumo de servicios deben estar en archivos separados para que cada uno tenga una sola responsabilidad y el main solo los invoque
 import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
 import { setupCounter } from './counter.js';

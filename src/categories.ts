@@ -7,7 +7,7 @@ export const renderCategories = (
 ) => {
   // EL CONTENEDOR ES EL SELECT
   for (let i = 0; categories.length > i; i++) {
-    let opt = document.createElement('option'); // CREA NODO
+    const opt = document.createElement('option'); // CREA NODO
     opt.value = categories[i].slug; // EL VALOR DEL SELECCIONABLE
     opt.textContent = categories[i].name; // EL USUARIO LO VEE
 

@@ -15,7 +15,7 @@ if (typeof window.productsGlobal === 'undefined') {
 const applyFilter = (container: HTMLElement, keyText: string) => {
   clearContainer(container);
 
-  let result = window.productsGlobal.filter(
+  const result = window.productsGlobal.filter(
     (producto: Product) =>
       producto.title.toLowerCase().includes(keyText.toLowerCase()) ||
       producto.category === keyText

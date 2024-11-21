@@ -64,6 +64,7 @@ export const getAllProducts = async (container: HTMLElement) => {
   // products , solo existe dentro de getAllProducts
   const products = await response.json();
 
+  // las variables globales son expuestas y f'acil de modificar tal vez podr'ias usar una clase para persistir la data, un singleton podr'ia ser una opci'on
   window.productsGlobal = products['products'];
 
   clearContainer(container);

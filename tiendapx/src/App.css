@@ -1,0 +1,240 @@
+#root {
+  width: 100%;
+  box-sizing: content-box;
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+body {
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-area {
+  display: flex;
+  width: 400px;
+  margin: 0px auto;
+  flex-direction: row;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 0px auto;
+  max-width: 1200px;
+}
+
+.product-card {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.product-card .product-image {
+  width: 100%;
+}
+
+.product-card .product-image img {
+  width: 100%;
+}
+
+.product-card .product-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.product-card button {
+  background: blue;
+  color: white
+}
+
+.product-extra {
+  display: flex;
+  padding-top: 6px;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  background-color: #666;
+  justify-content: space-between;
+}
+.navbar h1 {
+  margin: 0px;
+  cursor: pointer;
+  color: white;
+  font-size: 32px;
+  padding-left: 2em;
+}
+.navbar .cart {
+  display: flex;
+  cursor: pointer;
+}
+
+.navbar .circle {
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.main-content {
+  width: 80%;
+  margin: 0px auto;
+  padding-top: 3em;
+}
+
+.detail-area {
+  -webkit-box-shadow: 0px 10px 18px 0px rgba(158, 158, 158, 1);
+  -moz-box-shadow: 0px 10px 18px 0px rgba(158, 158, 158, 1);
+  box-shadow: 0px 10px 18px 0px rgba(158, 158, 158, 1);
+}
+
+.detail-area .summary {
+  font-weight: bold;
+  display: flex;
+  border-top: 2px solid #333;
+  justify-content: end;
+  padding: 1rem;
+}
+
+.detail-table-area {
+  display: flex;
+  background-color: #666;
+}
+
+.detail-table-area .col,
+.detail-row-area .col {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.detail-row-area {
+  display: flex;
+}
+
+.detail-row-area .col {
+  color: inherit;
+}
+
+.detail-row-area button {
+  background-color: red;
+  color: white
+}
+
+.spinner {
+  display: flex;
+  gap: 3px;
+
+}
+
+.spinner button {
+  background-color: blue;
+  color: white;
+}
+
+.spinner input {
+  width: 64px;
+}
+
+.shipping-form {
+  width: 50%;
+  -webkit-box-shadow: 0px 10px 18px 0px rgba(158, 158, 158, 1);
+  -moz-box-shadow: 0px 10px 18px 0px rgba(158, 158, 158, 1);
+  box-shadow: 0px 10px 18px 0px rgba(158, 158, 158, 1);
+  margin: 0px auto;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.shipping-form {margin-top: 2em;}
+
+.shipping-form .form-group {
+  margin-bottom: 10px;
+}
+
+.shipping-form .form-group label {
+  font-weight: bold;
+}
+
+.shipping-form .form-field {
+  width: 100%;
+  padding: 8px 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.shipping-form .form-group .error {
+  color: red;
+}
+
+.shipping-form h3 {
+  text-align: center;
+  margin: 0px;
+}
+
+.shipping-form .form-group button {
+  background-color: green;
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  color: white;
+}
+
+.dialog {
+  z-index: 999;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  padding: 3em;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 10px 18px 0px rgba(158, 158, 158, 1);
+  -moz-box-shadow: 0px 10px 18px 0px rgba(158, 158, 158, 1);
+  box-shadow: 0px 10px 18px 0px rgba(158, 158, 158, 1);
+}
+.dialog .content {
+  width: 400px;
+  margin: 8em auto;
+  padding: 3em;
+  background: white;
+  border-radius: 6px;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 18px 0px rgba(158, 158, 158, 1);
+  -moz-box-shadow: 0px 10px 18px 0px rgba(158, 158, 158, 1);
+  box-shadow: 0px 10px 18px 0px rgba(158, 158, 158, 1);
+}
+.dialog .content button {
+  background-color: green;
+  color: white;
+}

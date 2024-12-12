@@ -1,3 +1,4 @@
+// faltan tests y cumplir los criterios definidos para proyecto integrador
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Resumen from "./pages/Resumen";
